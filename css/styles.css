@@ -1,0 +1,78 @@
+/* Variables */
+/* Reset CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+input {
+  font: inherit;
+}
+
+i {
+  color: hsl(0, 0%, 52%);
+}
+
+img, video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* General Styling */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(200, 15%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(207, 26%, 17%);
+  padding: 1.5rem;
+}
+header .modes .dark, header .modes .light {
+  cursor: pointer;
+}
+header .modes .light {
+  display: none;
+}
+
+#countries-container {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  #countries-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.country-container {
+  background-color: hsl(207, 26%, 17%);
+  display: grid;
+  cursor: pointer;
+}
+.country-container .flag {
+  object-fit: cover;
+  height: 200px;
+}
+.country-container .country-information {
+  padding: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+#section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.info {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.subDiv2, .subDiv3 {
+  display: grid;
+  gap: 2rem;
+}/*# sourceMappingURL=country.css.map */

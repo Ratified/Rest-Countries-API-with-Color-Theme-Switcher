@@ -1,0 +1,62 @@
+/* Variables */
+/* Reset CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+input {
+  font: inherit;
+}
+
+i {
+  color: hsl(0, 0%, 52%);
+}
+
+img, video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(200, 15%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* This is general for both pages */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(207, 26%, 17%);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+header .modes .dark, header .modes .light {
+  cursor: pointer;
+}
+header .modes .light {
+  display: none;
+}
+
+.back {
+  padding: 0.5rem;
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  margin-left: 3rem;
+}/*# sourceMappingURL=reset.css.map */

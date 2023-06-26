@@ -1,0 +1,31 @@
+/* General Styling */
+#countries-container{
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
+@media(min-width: 700px){
+    #countries-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+.country-container{
+    background-color: $Very-Dark-Blue-1;
+    display: grid;
+    cursor: pointer;
+
+    .flag{
+        object-fit: cover;   
+        height: 200px;    
+    }
+
+    .country-information{
+        padding: 1.5rem;
+
+    }
+
+}

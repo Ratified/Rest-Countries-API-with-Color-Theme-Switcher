@@ -1,0 +1,76 @@
+/* Variables */
+$Dark-Blue : hsl(209, 23%, 22%); //(Dark Mode Elements)
+$Very-Dark-Blue-1: hsl(207, 26%, 17%); //(Dark Mode Background)
+$Very-Dark-Blue: hsl(200, 15%, 8%); //(Light Mode Text)
+$Dark-Gray: hsl(0, 0%, 52%); //(Light Mode Input)
+$Very-Light-Gray : hsl(0, 0%, 98%); //(Light Mode Background)
+$White: hsl(0, 0%, 100%);
+$ff-main: 'Nunito Sans', sans-serif;
+
+/* Reset CSS */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+
+input{
+    font: inherit;
+}
+
+i{
+    color: $Dark-Gray;
+}
+
+img, video, canvas, svg{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: $ff-main;
+  background-color: $Very-Dark-Blue;
+  color: $White;
+}
+
+
+/* This is general for both pages */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Very-Dark-Blue-1;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    .modes{
+        .dark, .light{
+            cursor: pointer;
+        }
+
+        .light{
+            display: none;
+        }
+    }
+}
+
+.back{
+    padding: 0.5rem;
+    background-color: $Dark-Blue;
+    color: white;
+    margin-left: 3rem;
+}
